@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador - Refrimaquinas Refrigeração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Painel do Administrador</h1>
+        <nav>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+
+    <section id="novoAgendamento">
+        <h2>Adicionar Agendamento</h2>
+        <form id="formAgendamento">
+            <label for="nome">Nome do Cliente:</label>
+            <input type="text" id="nome" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" required>
+
+            <label for="data">Data e Hora:</label>
+            <input type="datetime-local" id="data" required>
+
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+    
+    <section id="agendamentos">
+        <h2>Agendamentos</h2>
+        <ul id="listaAgendamentos"></ul>
+    </section>
+
+    <script src="dashboard-admin.js"></script>
+</body>
+</html>

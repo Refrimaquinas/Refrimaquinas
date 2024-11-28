@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Refrimaquinas Refrigeração</title>
+</head>
+<body>
+    <h1>Você foi desconectado!</h1>
+    <p>Redirecionando para a página de login...</p>
+    
+    <script>
+        localStorage.removeItem("userType"); // Remove o tipo de usuário do localStorage
+        setTimeout(function() {
+            window.location.href = "login-admin.html";  // Redireciona para a página de login do administrador (ou para a de funcionário)
+        }, 2000); // 2 segundos para redirecionar
+    </script>
+</body>
+</html>
